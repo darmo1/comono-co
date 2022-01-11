@@ -25,7 +25,7 @@ const Post = () => {
            'authorImage': author->image
             }`)
       .then((data) => setSinglePost(data[0]))
-      .catch(console.error)
+      .catch(console.error.message)
   }, [slug])
 
   if (!singlePost) return <div>Loading...</div>
